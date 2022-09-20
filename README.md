@@ -5,12 +5,12 @@ INSTRUCTIONS
 
 Connect the following pins with a 4-wire ribbon cable:
 
-Pingy        <-|-> Arduino (Nano Every)
-:---------------|:--------------------
-`V` | A0      
-`C1` | A5  
-`Da` | A4  
-`G` | GND         
+Pingy | Arduino (Nano Every)
+:-----|:--------------------
+`V`   | A0      
+`C1`  | A5  
+`Da`  | A4  
+`G`   | GND         
 
 
 Then compile the `behavior.ino` file to the Arduino. Tested with a Nano Every. With Pingy powered off, use the Arduino Serial Monitor or otherwise connect to the Arduino with the source application at 115200 baud. The C++ source is in the `src` folder.
