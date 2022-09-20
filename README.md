@@ -5,7 +5,7 @@ INSTRUCTIONS
 
 Connect the following pins with a 4-wire ribbon cable:
 
-Pingy | Arduino (Nano Every)
+Pingy | Arduino
 :-----|:--------------------
 `V`   | A0      
 `C1`  | A5  
@@ -13,11 +13,13 @@ Pingy | Arduino (Nano Every)
 `G`   | GND         
 
 
-Then compile the `behavior.ino` file to the Arduino. Tested with a Nano Every. With Pingy powered off, use the Arduino Serial Monitor or otherwise connect to the Arduino with the source application at 115200 baud. The C++ source is in the `src` folder.
+Then compile the `behavior.ino` file to the Arduino. The code has been tested with a Nano Every. 
+
+With Pingy powered off, use the Arduino Serial Monitor or otherwise connect to the Arduino with the source application at 115200 baud. The C++ source is in the `src` folder.
 
 Turn on your Pingy.  With luck, you should receive a "Pingy detected" message.
   
-Allowable commands (the closing semicolon is required):
+Allowable commands - the closing semicolon is required:
 ```
     SOUND PLAY <0...63>;
     SOUND REPEAT <0...63>;
@@ -33,7 +35,7 @@ Allowable commands (the closing semicolon is required):
     MODE TEMPO;
     MODE SLEEP;
 ```
-Strings that the Arduino can send back to you:
+Strings that the Arduino transmits back:
 ```
     BUTTON [DANCE, TOUCH] [OFF, ON]
     BUTTON [HEAD, FRONT, BACK, RIGHT, LEFT] [OFF, ON]
